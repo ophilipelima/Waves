@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<center>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Perfil</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+	background-color: rgb(34,34,34);
+	color: white;
+	color: grey;
+	font-family: 'Poppins', sans-serif;
+}
+
+img{
+	width: 280px
+}
+
+.btn{
+	 border-radius: 70px;
+}
+
+</style>
+<body>
+
+	<header>
+	
+	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+<button type="button" class="btn btn-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1">
+  Editar 	Perfil
+</button>
+<button type="button" class="btn btn-light" class="btn btn-primar" data-bs-toggle="modal" data-bs-target="#Modal2">
+  Configurações
+</button>
+</div>
+
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ModalLabel1">Editar Perfil</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Nome Usuário</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+  <div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+       
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ModalLabel2">Configurações</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-light" class="btn btn-primary">Alterar Conta</button>
+  <button type="button" class="btn btn-light" class="btn btn-primary">alterar Senha</button>
+  <button type="button" class="btn btn-light" class="btn btn-primary">Excluir Conta</button>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-light class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	</header>
+
+	<main>
+    	<section>
+    	
+    		<div position: absolute;>
+    	    <img src="imagens/logo.PNG" alt="logo">
+    	    </div>
+    
+    		<img src="imagens/user.png" alt="usuario">
+    
+    		<h3>User</h3>
+    
+            <p><strong>Email:</strong> email@usuario.com</p>
+            
+ <div class="d-grid gap-2 col-6 mx-auto">
+<button type="button" class="btn btn-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal3">
+  Histórico
+</button>
+<button type="button" class="btn btn-light" class="btn btn-primar" data-bs-toggle="modal" data-bs-target="#Modal4">
+  Sua Recap
+</button>
+</div>
+
+
+<div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ModalLabel3">Histórico</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-light" class="btn btn-primary">Recentes</button>
+  <button type="button" class="btn btn-light" class="btn btn-primary">Marcadas com "Gostei"</button>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="ModalLabel4" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ModalLabel4">Sua Recap</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-light" class="btn btn-primary">Reproduzir</button>
+  <button type="button" class="btn btn-light" class="btn btn-primary">Musica1</button>
+  <button type="button" class="btn btn-light" class="btn btn-primary">Musica2</button>
+  <button type="button" class="btn btn-light" class="btn btn-primary">Musica3</button>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+            
+      
+    		
+   		</section>
+    
+        <section>
+    
+            <ul>
+                
+    
+            </ul>
+    
+        </section>
+  
+</main>
+
+<footer class="footer footer-dark">
+	<div class="container">
+		<p class="text center">Precisa de ajuda? Entre em contato com nossa equipe: <a href="mailto:seu@email.com">suportewaves@gmail.com</a></p>
+	</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</center>
+</html>

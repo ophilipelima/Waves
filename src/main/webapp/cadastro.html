@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro</title>
+
+<script src="https://kit.fontawesome.com/c992652fcd.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="cadastro.css">
+
+</head>
+<body>
+<header>
+	 <img src="imagens/logo.PNG" alt="logo-waves" width="220" id="logo">
+</header>
+
+	<div id="form">
+		<form action="ServletWaves" method="post">
+			<h2 class="title">
+				Cadastre-se
+			</h2>
+
+			<label for="nome">Nome:</label>
+				<div class="input">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					<input type="text" id="nome" name="nome" placeholder="Nome">
+				</div>
+
+			<label for="email">Email:</label>
+				<div class="input">
+					<i class="fa-regular fa-envelope"></i>
+					<input type="email" id="email" name="email" placeholder="Email">
+				</div>
+
+			<label for="senha">Senha:</label>
+				<div class="input">
+					<i class="fa-solid fa-lock"></i>
+					<input type="password" id="senha" name="senha" placeholder="Crie uma senha">
+				</div>
+
+		<div id="btn">
+			<button type="submit">Cadastrar</button>
+		</div>
+		
+		</form>
+</div>
+	
+
+</body>
+</html>
