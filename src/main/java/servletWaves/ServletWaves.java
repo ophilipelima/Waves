@@ -41,6 +41,7 @@ public class ServletWaves extends HttpServlet {
 		String senha = request.getParameter("senha");
 		
 		response.sendRedirect("index.jsp");
+		//teste teste
 		doGet(request, response);
 	}
 
