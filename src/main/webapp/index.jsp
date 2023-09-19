@@ -12,43 +12,8 @@
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+<link rel="stylesheet" href="css/index.css">
 
-body {
-	background-color: rgb(34,34,34);
-	color: white;
-	color: grey;
-	font-family: 'Poppins', sans-serif;
-
-}
-
-.btn {
-	 border-radius: 70px;
-}
-
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.left{
-	display: flex;
-	justify-content: left;
-	align-items: left;
-	margin-left: 250px;
-}
-
-.right{
-	display: flex;
-	justify-content: right;
-	align-items: right;
-	margin-right: 250px;
-	margin-top: -194px;
-}
-
-</style>
 <body>
 
 	
@@ -56,7 +21,10 @@ body {
             <div>
     	    <img src="imagens/logo.PNG" alt="logo">
     	    </div>
-    	    
+    	  
+    	<div style='align:justify'>
+    	 <p><a href="perfil.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Perfil</a></p>
+    	</div>
     	    
     	 &nbsp;
     	<div class= "container">
@@ -74,11 +42,11 @@ body {
 <div class="left"> 
   <div class="col-4">
     <div class="list-group" id="list-tab" role="tablist">
-  		<a href="https://youtu.be/JY5zcfb3zRU?si=CbGd8Ilaf86uxhGr" class="list-group-item list-group-item-action active" aria-current="true">Open the Tcheka-Mc Lan</a>
+  		<a href="https://www.youtube.com/watch?v=puxjq3p-fU0&pp=ygUMd29yayByaWhhbm5h" class="list-group-item list-group-item-action active" aria-current="true">Work-Rihanna</a>
   		&nbsp;
   		<a href="https://www.youtube.com/watch?v=4iKtTmnHojU&pp=ygUOc2FtYmEgaW4gcGFyaXM%3D" class="list-group-item list-group-item-action active" aria-current="true">Samba in paris-Baco</a>
   		&nbsp;
-  		<a href="https://www.youtube.com/watch?v=EEhZAHZQyf4&pp=ygUPdGhhbmsgeW91IG5leHQg" class="list-group-item list-group-item-action active" aria-current="true">Thank You Next-Ariana Grande</a>
+  		<a href="https://www.youtube.com/watch?v=bpOSxM0rNPM&pp=ygUPZG8gaSB3YW5uYSBrbm93" class="list-group-item list-group-item-action active" aria-current="true">Do I Wanna Know?-Arctic Monkeys</a>
   		</div>
 	</div>
 </div>
@@ -87,7 +55,7 @@ body {
 <div class="right">
   <div class="col-4">
     <div class="list-group" id="list-tab" role="tablist">
-  		<a href="https://www.youtube.com/watch?v=puxjq3p-fU0&pp=ygUNd29yayByaWhhbm5hIA%3D%3D" class="list-group-item list-group-item-action active" aria-current="true">Work-Rhianna</a>
+  		<a href="https://www.youtube.com/watch?v=SsKT0s5J8ko&pp=ygUUbWFjIG1pbGxlciBzZWxmIGNhcmU%3D" class="list-group-item list-group-item-action active" aria-current="true">Self Care-Mac Miller</a>
   		&nbsp;
   		<a href="https://www.youtube.com/watch?v=JRD_Zx-zFgE&pp=ygUPY2FjaGltYm8gZGEgcGF6" class="list-group-item list-group-item-action active" aria-current="true">Cachimbo da Paz-Gabriel Pensador</a>
   		&nbsp;
