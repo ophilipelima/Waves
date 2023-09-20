@@ -44,7 +44,7 @@ public class ServletWaves extends HttpServlet {
 		String email = request.getParameter("email");
 		String senha = request.getParameter("senha");
 		
-		 if (senha != null && senha.length() >= 8 && nome != null && email != null) {
+		 if (senha != null && senha.length() >= 8) {
 			 response.sendRedirect("index.jsp");
 		 }else {
 	    	PrintWriter out = response.getWriter();

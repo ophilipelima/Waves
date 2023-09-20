@@ -57,8 +57,9 @@
     </main>
 	
 	  <%	
-	  	String gmail_ = request.getParameter("gmail");
-	  	String senha_ = request.getParameter("senha");
+		 
+	  	String gmail = request.getParameter("gmail");
+	  	String senha = request.getParameter("senha");
 	  	
 	  %>
 </body>
