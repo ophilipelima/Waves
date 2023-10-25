@@ -7,16 +7,19 @@ public class JavaBeans {
 	private String nome;
 	
 	private String email;
-
+	
+	private String senha;
+	
 	public JavaBeans() {
 		super();
 	}
 
-	public JavaBeans(String idcon, String nome, String email) {
+	public JavaBeans(String idcon, String nome, String email, String senha) {
 		super();
 		this.idcon = idcon;
 		this.nome = nome;
 		this.email = email;
+		this.senha = senha;
 	}
 
 	public String getIdcon() {
@@ -41,5 +44,13 @@ public class JavaBeans {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 }
