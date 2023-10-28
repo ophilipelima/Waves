@@ -9,17 +9,17 @@ public class DAO {
 
 	private String driver = "com.mysql.cj.jdbc.Driver";
 		
-	private String url = "jdbc:mysql://localhost:3306/wavesbd?user=philipe&password=1234";
+	private String url = "jdbc:mysql://localhost:3306/wavesbd";
 		
-	private String user = "philipe";
+	private String user = "root";
 		
 	private String password = "1234";
 
-	private Connection conectar() {
+	public Connection conectar() {
 		Connection con = null;
 			try {
 				Class.forName(driver);
-				con = DriverManager.getConnection(url);
+				con = DriverManager.getConnection(url, user, password);
 				return con;
 			} catch (Exception e) {
 				System.out.println(e);
@@ -27,6 +27,21 @@ public class DAO {
 			}
 
 		}
+		
+	public void inserirCadastro(JavaBeans tbl_cadastro) {
+		String create = "insert into tbl_cadastro (nome,email,senha) values (?,?,?)";
+		try {
+			Connection con = conectar();
+			PreparedStatement pst = con.prepareStatement(create);
+			pst.setString(1, tbl_cadastro.getNome());
+			pst.setString(2, tbl_cadastro.getSenha());
+			pst.setString(3, tbl_cadastro.getEmail());
+			pst.execute();
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
 	
 	}
 
