@@ -56,7 +56,7 @@ public class Cadastro extends HttpServlet {
 			out.print("Existe algo errado! \n");
 			out.print("A senha deve ter 8 ou mais caracteres");
 		}
-		doGet(request, response);
+		
 	}
 
 }

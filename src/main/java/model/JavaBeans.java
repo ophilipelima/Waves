@@ -2,7 +2,6 @@ package model;
 
 public class JavaBeans {
 	
-	private String idcon;
 	
 	private String nome;
 	
@@ -16,19 +15,12 @@ public class JavaBeans {
 
 	public JavaBeans(String idcon, String nome, String email, String senha) {
 		super();
-		this.idcon = idcon;
+
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 	}
 
-	public String getIdcon() {
-		return idcon;
-	}
-
-	public void setIdcon(String idcon) {
-		this.idcon = idcon;
-	}
 
 	public String getNome() {
 		return nome;
