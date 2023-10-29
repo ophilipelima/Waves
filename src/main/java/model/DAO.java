@@ -9,7 +9,7 @@ public class DAO {
 
 	private String driver = "com.mysql.cj.jdbc.Driver";
 		
-	private String url = "jdbc:mysql://127.0.0.1:3306/wavesbd";
+	private String url = "jdbc:mysql://127.0.0.1:3306/wavesbd?useTimezone=true&serverTimezone=UTC";
 		
 	private String user = "root";
 		
@@ -29,7 +29,7 @@ public class DAO {
 		}
 		
 	public void inserirCadastro(JavaBeans tbl_cadastro) {
-		String create = "insert into tbl_cadastro (nome,email,senha) values (?,?,?)";
+		String create = "INSERT INTO tbl_cadastro (nome,email,senha) VALUES (?,?,?)";		
 		try {
 			Connection con = conectar();
 			PreparedStatement pst = con.prepareStatement(create);
@@ -37,6 +37,7 @@ public class DAO {
 			pst.setString(2, tbl_cadastro.getEmail());
 			pst.setString(3, tbl_cadastro.getSenha());
 			pst.execute();
+			con.commit();
 			con.close();
 		} catch (Exception e) {
 			System.out.println(e);

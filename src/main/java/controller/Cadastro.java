@@ -18,8 +18,7 @@ import model.JavaBeans;
 @WebServlet("/Cadastro")
 public class Cadastro extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-	DAO dao = new DAO();
+ 
 
 	
     public Cadastro() {
@@ -43,12 +42,6 @@ public class Cadastro extends HttpServlet {
 		String email = request.getParameter("email");
 		String senha = request.getParameter("senha");
 				
-			
-		JavaBeans javaBeans = new JavaBeans();
-		javaBeans.setNome(nome);
-		javaBeans.setEmail(email);
-		javaBeans.setSenha(senha);
-		
 		if (senha != null && senha.length() >= 8) {
 				response.sendRedirect("index.jsp");
 		}else {
@@ -57,6 +50,13 @@ public class Cadastro extends HttpServlet {
 			out.print("A senha deve ter 8 ou mais caracteres");
 		}
 		
+		JavaBeans tbl_cadastro = new JavaBeans();
+		tbl_cadastro.setNome(nome);
+		tbl_cadastro.setEmail(email);
+		tbl_cadastro.setSenha(senha);
+		
+		DAO dao = new DAO();
+		dao.inserirCadastro(tbl_cadastro);
 	}
 
 }
