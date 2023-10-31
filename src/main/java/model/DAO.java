@@ -37,7 +37,6 @@ public class DAO {
 			pst.setString(2, tbl_cadastro.getEmail());
 			pst.setString(3, tbl_cadastro.getSenha());
 			pst.execute();
-			con.commit();
 			con.close();
 		} catch (Exception e) {
 			System.out.println(e);
